@@ -11,8 +11,6 @@ SELECT
     ip_address AS 'Endereço IP',
     mac_address AS 'Mac Address',
 
-    ROUND(JULIANDAY(last_meter_timestamp) - JULIANDAY(first_meter_timestamp), 2) AS 'Dias entre Medidores',
-
     DATETIME(first_meter_timestamp) AS 'Data Primeiro Medidor',
     DATETIME(last_meter_timestamp) AS 'Data Último Medidor',
     -- coleta ultimo medidor
